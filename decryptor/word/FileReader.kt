@@ -1,11 +1,11 @@
-package word
+package decryptor.word
 
-import model.Word
+import decryptor.model.Word
 import java.io.File
 
 class FileReader(val file: String){
 
-    fun readFileDirectlyAsText(fileName: String): String
+    fun readFileDirectlyAsText(fileName: String = file): String
             = File(fileName).readText(Charsets.UTF_8)
 
     fun getMostPopularWords(): List<Word>{

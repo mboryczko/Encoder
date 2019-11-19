@@ -1,11 +1,9 @@
+package decryptor
+
 import extensions.deepCopy
-import model.LetterTranslation
-import word.FilePrinter
-import java.io.Serializable
-import java.io.ByteArrayOutputStream
-import java.io.ByteArrayInputStream
-import java.io.ObjectOutputStream
-import java.io.ObjectInputStream
+import getProperPopulation
+import decryptor.model.LetterTranslation
+import decryptor.word.FilePrinter
 
 class GeneticAlgorithm{
     val wordAnalyzer = WordAnalyzer()

@@ -1,4 +1,4 @@
-package model
+package decryptor.model
 
 import java.io.Serializable
 

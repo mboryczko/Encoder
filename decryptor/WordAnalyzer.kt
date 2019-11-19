@@ -1,8 +1,10 @@
-import model.Letter
-import model.LetterProbabilty
-import model.LetterTranslation
-import model.Word
-import word.FileReader
+package decryptor
+
+import decryptor.model.Letter
+import decryptor.model.LetterProbabilty
+import decryptor.model.LetterTranslation
+import decryptor.model.Word
+import decryptor.word.FileReader
 import java.util.*
 
 class WordAnalyzer(){
@@ -161,7 +163,7 @@ class WordAnalyzer(){
                     foundMatchingWords.add(Word(word, 1))
                 }
             }else{
-                //println("not found $word")
+                //println("not found $decryptor.word")
             }
         }
 

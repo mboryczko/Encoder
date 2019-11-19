@@ -1,6 +1,6 @@
-import model.LetterTranslation
-import word.FilePrinter
-import word.FileReader
+import decryptor.model.LetterTranslation
+import polyalphabeticcypher.PolyalphabeticCipher
+import vigenere.VigenereAlgorithm
 
 fun getProperPopulation() = listOf(
             LetterTranslation('a', 'r'),
@@ -33,7 +33,16 @@ fun getProperPopulation() = listOf(
 
 
 fun main(args : Array<String>) {
-    val geneticAlgorithm = GeneticAlgorithm()
-    geneticAlgorithm.run()
+    //val geneticAlgorithm = decryptor.GeneticAlgorithm()
+    //geneticAlgorithm.run()
+
+    //val vigenereAlgorithm = VigenereAlgorithm()
+    //val encrypted = vigenereAlgorithm.encrypt()
+    //val decrypted = vigenereAlgorithm.decrypt(encrypted)
+
+
+    val polyalphabeticCipher = PolyalphabeticCipher()
+    val encrypted = polyalphabeticCipher.encrypt()
+    polyalphabeticCipher.decrypt(encrypted)
 }
 

@@ -1,4 +1,4 @@
-package model
+package decryptor.model
 
 data class LetterProbabilty(
         val letter: Char,

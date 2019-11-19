@@ -1,9 +1,9 @@
-package word
+package decryptor.word
 
 import extensions.round
-import model.Letter
-import model.LetterTranslation
-import model.Word
+import decryptor.model.Letter
+import decryptor.model.LetterTranslation
+import decryptor.model.Word
 import java.io.File
 
 class FilePrinter(){
